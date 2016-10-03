@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <title>Create a Boot Disk to Reset Your Windows Password</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="instructions.css" />
+</head>
+<body>
+  <div class="container" id="wrapper">
+    <h1>Create a Boot Disk to Reset Your Windows Password</h1>
+    <p>Hopefully you've never had to experience the trauma of forgetting a password to a computer. Obviously, it's not the end of the world when it happens, and there are ways of getting around a login password without any harm to you or your computer. Today we are going to bestow this sacred power into your mortal hands.</p>
+    <p>You'll need:
+      <ul>
+        <li>USB drive</li>
+        <li>Windows computer or laptop</li>
+        <li>Administrator account access</li>
+      </ul>
+    </p>
+    <ol>
+      <li>Download Password_Reset_Creator.zip</li>
+      <div class="step">
+        <p>Open up a web browser and navigate to http://tinyurl.com/ENGL316-pw.
+        This will download Password_Reset_Creator.zip.</p>
+      </div>
+      <li>Extract the contents of the zip file</li>
+      <div class="step">
+        <p>Open up your downloads folder, right click 'Password_Reset_Creator.zip', and select "Extract All".
+          Click the extract button when a popup comes up to confirm the location to extract it to.</p>
+      </div>
+      <li>Run 'createdrive.bat' as administrator</li>
+      <div class="step">
+        <p>In the newly opened folder, right click 'createdrive.bat' and select "Run as Administrator".</p>
+        <img src="images/run-as-administrator.png" alt="" />
+        <p>Select "Yes" at the prompt.</p>
+      </div>
+      <li>Confirm the flash drive to use</li>
+      <div class="step">
+        <p>If you have more than one USB drive inserted, you will be prompted to choose which one to erase.
+        The script will then ask you to confirm your choice.</p>
+        <div class="alert alert-warning">
+          <strong>Caution!</strong> All data will be erased from the flash drive! Please backup any data on the flash drive beforehand, and make sure you are using the correct drive.
+        </div>
+        <img src="images/script-running.png" alt="" />
+        <p>Once you type 'Y' for yes, press the enter key and watch the script run.</p>
+      </div>
+      <li>Exit the program and restart Windows</li>
+      <div class="step">
+        <p>The script is finished when it says "Press any key to exit..."</p>
+        <img src="images/script-finished.png" alt="" />
+        <p>Exit the window and shut down the computer. You've now built the boot disk and put it on a flash drive.
+        The next steps will show you how to use it.</p>
+      </div>
+      <li>Boot from the USB drive</li>
+      <div class="step">
+        <p>When you turn your computer back on, look at your screen for an option that says "Boot Options", "Boot Menu", or "Startup Device".
+          The specific hotkey may differ depending on what computer you use, but the hotkey should be listed next to the options listed on screen.
+          Press that button as the computer starts up.</p>
+        <img src="images/choose-boot-menu-vmware.png" alt="" />
+        <p>Next, choose to boot to the USB drive.</p>
+        <p>If all goes well, you'll see this loading screen.</p>
+        <img src="images/loading-screen.png" alt="" />
+        <p>This menu will come up next.</p>
+        <img src="images/main-menu.png" alt="" />
+      </div>
+      <li>Select an RID</li>
+      <div class="step">
+        <p>On this screen, you'll see a list of usernames and RIDs.
+          Type in the RID to the left of the username you want to reset the password for.
+          In this case, we want to reset the password for alyssa's account, so we type in "03eb".</p>
+        <img src="images/choose-user.png" alt="" />
+      </div>
+      <li>Clear the password</li>
+      <div class="step">
+        <p>Next, enter 1 to clear the user's password.</p>
+        <img src="images/clear-password.png" alt="" />
+      </div>
+      <li>Quit and write hive files</li>
+      <div class="step">
+        <p>Now that the user's password is cleared, we can exit and reboot the computer.
+          Press 'q' in the User Edit Menu and Main Menu to quit the program.</p>
+        <img src="images/quit-edit-user.png" alt="" />
+        <p>When it asks to "Write hive files?", make sure to enter 'y'! Otherwise, your changes will not be saved.</p>
+      </div>
+      <li>Reboot Windows and login</li>
+      <div class="step">
+        <p>Finally, reboot Windows. Now you can login without a password to the account you edited! Congratulations!</p>
+      </div>
+    </ol>
+    <p id="conclusion">And just like that, you're a personal computer system administrator. If you have a random PC that's account is locked, you can now get back in and use it like normal.</p>
+  </div>
+</body>
+</html>
