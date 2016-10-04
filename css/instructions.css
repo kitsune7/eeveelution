@@ -10,6 +10,10 @@ h1 {
   margin-bottom: 20px;
   padding-top: 0;
 }
+h2 {
+  font-weight: 300;
+  font-size: 26px;
+}
 ul {
   margin-left: 40px;
 }
@@ -30,7 +34,18 @@ img {
   background-color: #fff;
   border: 5px solid #ccc;
   padding: 50px;
-  width: 975px;
+  max-width: 975px;
+}
+.thumbnail img {
+  margin: 0;
+  width: 100%;
+}
+.right {
+  float: right;
+}
+.right:after {
+  content: "";
+  clear: both;
 }
 @media print {
   #wrapper {
