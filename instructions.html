@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/instructions.css" />
+  <link rel="stylesheet" href="css/lightbox.css" />
 </head>
 <body>
   <div class="container" id="wrapper">
@@ -19,8 +20,8 @@
       computer.</p>
     <h2>Tools</h2>
     <div class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12 right">
-        <a href="images/requirements.png" class="thumbnail">
+      <div class="col-md-4 col-sm-6 col-xs-12 right gallery-tools">
+        <a href="images/requirements.png" class="thumbnail" data-toggle="lightbox">
           <img src="images/requirements.png" alt="" />
         </a>
       </div>
@@ -38,7 +39,7 @@
     <ol>
       <li>Download the Boot Disk Creator</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-1">
           <a href="images/extract-all.png" class="thumbnail">
             <img src="images/extract-all.png" alt="" />
           </a>
@@ -53,7 +54,7 @@
       </div>
       <li>Run 'createdrive.bat' as administrator</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-2">
           <a href="images/run-as-administrator.png" class="thumbnail">
             <img src="images/run-as-administrator.png" alt="" />
           </a>
@@ -66,7 +67,7 @@
       </div>
       <li>Confirm the flash drive to use</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-3">
           <a href="images/script-running.png" class="thumbnail">
             <img src="images/script-running.png" alt="" />
           </a>
@@ -85,7 +86,7 @@
       </div>
       <li>Exit the program and restart Windows</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-4">
           <a href="images/script-finished.png" class="thumbnail">
             <img src="images/script-finished.png" alt="" />
           </a>
@@ -99,7 +100,7 @@
       </div>
       <li>Enter boot menu</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-5">
           <a href="images/choose-boot-menu-vmware.png" class="thumbnail">
             <img src="images/choose-boot-menu-vmware.png" alt="" />
           </a>
@@ -118,7 +119,7 @@
       </div>
       <li>Boot from USB drive</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-6">
           <a href="images/loading-screen.png" class="thumbnail">
             <img src="images/loading-screen.png" alt="" />
           </a>
@@ -136,7 +137,7 @@
       </div>
       <li>Select an RID</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-7">
           <a href="images/choose-user.png" class="thumbnail">
             <img src="images/choose-user.png" alt="" />
           </a>
@@ -150,7 +151,7 @@
       </div>
       <li>Clear the password</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-8">
           <a href="images/clear-password.png" class="thumbnail">
             <img src="images/clear-password.png" alt="" />
           </a>
@@ -161,7 +162,7 @@
       </div>
       <li>Quit and write hive files</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-9">
           <a href="images/quit-edit-user.png" class="thumbnail">
             <img src="images/quit-edit-user.png" alt="" />
           </a>
@@ -176,7 +177,7 @@
       </div>
       <li>Reboot Windows and login</li>
       <div class="step row">
-        <div class="col-md-4 col-sm-6 col-xs-12 right">
+        <div class="col-md-4 col-sm-6 col-xs-12 right gallery-10">
           <a href="images/login-choosing.png" class="thumbnail">
             <img src="images/login-choosing.png" alt="" />
           </a>
@@ -196,5 +197,19 @@
       You should now be more familiar with the PC bootup process, and you have a nifty
       boot drive you can use anytime you need it.</p>
   </div>
+  <script src="js/lightbox.js"></script>
+  <script>
+    baguetteBox.run(".gallery-tools");
+    baguetteBox.run(".gallery-1");
+    baguetteBox.run(".gallery-2");
+    baguetteBox.run(".gallery-3");
+    baguetteBox.run(".gallery-4");
+    baguetteBox.run(".gallery-5");
+    baguetteBox.run(".gallery-6");
+    baguetteBox.run(".gallery-7");
+    baguetteBox.run(".gallery-8");
+    baguetteBox.run(".gallery-9");
+    baguetteBox.run(".gallery-10");
+  </script>
 </body>
 </html>
