@@ -57,7 +57,7 @@ img {
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.32);
   padding: $space * 2;
-  max-width: 975px;
+  max-width: 990px;
 }
 
 .thumbnail img {
@@ -71,5 +71,18 @@ img {
   &:after {
     content: "";
     clear: both;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #fff;
+  }
+
+  #wrapper {
+    box-shadow: none;
+    padding: $space;
+    margin: 0 auto;
+    width: 100%;
   }
 }
